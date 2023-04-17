@@ -1,5 +1,4 @@
 /* Global styles */
-
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -31,17 +30,49 @@ body {
   header {
     background-color: #007bff;
     color: #fff;
-    padding: 20px;
+    padding-bottom: 20px;
     text-align: center;
   }
   
-  /* Section styles */
+  /* Side menu styles */
+  nav {
+    float: left;
+    width: 15%;
+    background-color: #f5f5f5;
+    height: 200vh;
+    padding: 20px;
+    border: 0;
+    border-radius: 4px;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 10px 0;
+  }
+  /* Transparent background on hover and active menu item */
+nav a:hover,
+nav a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+  /* Main section styles */
+  
+  main {
+    float: right;
+    width: 75%;
+    padding-right: 20px;
+    padding: 20px;
+    height: 100vh;
+  }
   
   section {
-    padding: 20px;
     margin: 20px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
+    padding: 20px;
   }
   
   section h2 {
@@ -55,10 +86,10 @@ body {
   /* Form styles */
   
   form {
-    padding: 20px;
     margin: 20px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
+    padding: 20px;
   }
   
   form label, form input, form textarea {
@@ -98,5 +129,5 @@ body {
     padding: 20px;
     text-align: center;
     font-size: 0.8em;
+    clear: both;
   }
-  
